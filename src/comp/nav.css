@@ -1,0 +1,94 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.header
+{
+    width: 100%;
+}
+.header .top_header
+{
+    max-width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    background: #f6f7f9;
+}
+.header .top_header .icon
+{
+    margin-left: 20px;
+    color: #ababab;
+    font-size: 19px;
+}
+.header .top_header .info p{
+    margin-left: 10px;
+    color: #8a8a8a;
+}
+.header .mid_header
+{
+    display: flex;
+    padding: 20px 40px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.header .mid_header .logo img
+{
+    height: 45px;
+    width: 175px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.header .mid_header .search_box input
+{
+    padding: 10px 10px;
+    outline: none;
+    background: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 250px;
+    border: none;
+    transition: 0.5s;
+    background: #f6f7f9;
+}
+.header .mid_header .search_box button
+{
+    padding: 10px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(163, 38, 38);
+    width: 50px;
+    background: rgb(163, 38, 38);
+    color: #fff;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: 0.5s;
+    font-weight: 600;
+
+}
+.header .mid_header .search_box button:hover
+{
+    background: rgb(243, 109, 109);
+    color: #303030;
+}
+.header .mid_header .user
+{
+    display: flex;
+    margin-right: 30px;
+}
+.header .mid_header .user .icon
+{
+    margin-right: 10px;
+}
+.header .mid_header .user .btn button
+{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    /* padding: 0;*/
+    cursor: pointer;
+}

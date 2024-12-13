@@ -1,12 +1,13 @@
 import './App.css';
-
-function App() {
+import Nav from './comp/nav';
+import {BrowserRouter} from 'react-router-dom'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
-  );
+    <>
+    <BrowserRouter>
+    <Nav />
+    </BrowserRouter>
+    </>
+  )
 }
-
 export default App;
