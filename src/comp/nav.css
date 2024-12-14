@@ -92,3 +92,75 @@
     /* padding: 0;*/
     cursor: pointer;
 }
+.header .last_header
+{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background: #232323;
+    justify-content: space-between;
+}
+.header .last_header .user_profile
+{
+    display: flex;
+    margin-top: 10px;
+}
+.header .last_header .user_profile .icon
+{
+    padding: 10px 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+.header .last_header .user_profile .info
+{
+    margin-left: 10px;
+}
+.header .last_header .user_profile .info h2
+{
+    color: #fff;
+    font-size: 18px;
+}
+.header .last_header .user_profile .info p
+{
+    color: #ababab;
+    font-size: 14px;
+}
+.header .last_header .nav
+{
+    margin-top: 15px;
+}
+.header .last_header .nav ul
+{
+    display: flex;
+}
+.header .last_header .nav ul li
+{
+    list-style: none;
+}
+.header .last_header .nav ul li .link
+{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.header .last_header .nav ul li .link:hover
+{
+    color: rgb(163, 38, 38);
+}
+.header .last_header .offer
+{
+    margin-right: 20px;
+    padding: 10px 20px;
+    background: rgb(163, 38, 38);
+    border-radius: 10px;
+}
+.header .last_header .offer p
+{
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: 600;
+    font-size: 16px;
+}
