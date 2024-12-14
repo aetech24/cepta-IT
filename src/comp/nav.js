@@ -24,7 +24,6 @@ const Nav = () => {
             <div className="mid_header">
                 <div className="logo">
                     <img src="https://via.placeholder.com/150" alt="Logo" />
-                    {/* <p>Cepta IT</p> */}
                 </div>
                 <div className="search_box">
                     <input type="text" value='' placeholder="search"></input>
@@ -38,7 +37,7 @@ const Nav = () => {
                             <CiLogout />
                         </div>
                         <div className='btn'>
-                            <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</button>
+                            <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout </button>
                         </div>
                     </div>
                 :
