@@ -6,6 +6,20 @@ import { AiFillEye, AiFillHeart} from "react-icons/ai";
 
 const Home = () => {
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct)
+  //filter of trending product
+  const filtercate = (x) =>
+  {
+    const filterproduct = Homeproduct.filter((curElm) =>
+    {
+      return curElm.type === x
+    })
+    setTrendingProduct(filterproduct)
+  }
+  //All trending products
+  const allTrendingProduct = () =>
+  {
+    setTrendingProduct(Homeproduct)
+  }
   return (
     <>
       <div className="home">
@@ -22,12 +36,12 @@ const Home = () => {
             <div class="left_box">
               <div class="header">
                 <div class="heading">
-                  <h2>Trending Products</h2>
+                  <h2 onClick={() => allTrendingProduct()}>Trending Products</h2>
                 </div>
                 <div class="cate">
-                  <h3>New</h3>
-                  <h3>Featured</h3>
-                  <h3>Top Selling</h3>
+                  <h3 onClick={() => filtercate('new')}>New</h3>
+                  <h3 onClick={() => filtercate('featured')}>Featured</h3>
+                  <h3 onClick={() => filtercate('top')}>Top Selling</h3>
                 </div>
               </div>
               <div class="products">
@@ -41,13 +55,18 @@ const Home = () => {
                           <div class="img_box">
                             <img src={curElm.image} alt=""></img>
                             <div class="icon">
-                              <div class="icon-box">
+                              <div class="icon_box">
                               <AiFillEye />
                               </div>
-                              <div class="icon-box">
+                              <div class="icon_box">
                               <AiFillHeart />
                               </div>
                             </div>
+                          </div>
+                          <div class="info">
+                            <h3>{curElm.Name}</h3>
+                            <p>${curElm.price}</p>
+                            <button className='btn'>Add To Cart</button>
                           </div>
                         </div>
                         </>
@@ -58,7 +77,18 @@ const Home = () => {
               </div>
             </div>
             <div class="right_box">
-
+                  <div class="container">
+                    <div class="testimonial">
+                      <div class="head">
+                        <h3>Our Testimonials</h3>
+                      </div>
+                      <div class="detail">
+                        <div class="img_box">
+                          <img src="" alt="testimonial"></img>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
