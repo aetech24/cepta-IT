@@ -1,24 +1,39 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './home.css'
 import { createRoutesFromElements, Link } from 'react-router-dom';
 import Homeproduct from './home.product'
-import { AiFillEye, AiFillHeart} from "react-icons/ai";
+import { AiFillEye, AiFillHeart } from "react-icons/ai";
+import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube} from "react-icons/bi";
 
 const Home = () => {
+  //product category
+  const [newProduct, setNewProduct] = useState('');
+  //trending products
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct)
   //filter of trending product
-  const filtercate = (x) =>
-  {
-    const filterproduct = Homeproduct.filter((curElm) =>
-    {
+  const filtercate = (x) => {
+    const filterproduct = Homeproduct.filter((curElm) => {
       return curElm.type === x
     })
     setTrendingProduct(filterproduct)
   }
   //All trending products
-  const allTrendingProduct = () =>
-  {
+  const allTrendingProduct = () => {
     setTrendingProduct(Homeproduct)
+  }
+
+  //Product Type
+  useEffect(() =>
+  {
+    productcategory()
+  })
+  const productcategory = () => 
+  {
+    newcategory = Homeproduct.filter((x) =>
+    {
+      return x.type === 'new'
+    })
+    setNewProduct(newcategory)
   }
   return (
     <>
@@ -47,48 +62,105 @@ const Home = () => {
               <div class="products">
                 <div class="container">
                   {
-                    trendingProduct.map((curElm) =>
-                    {
+                    trendingProduct.map((curElm) => {
                       return (
                         <>
-                        <div class="box">
-                          <div class="img_box">
-                            <img src={curElm.image} alt=""></img>
-                            <div class="icon">
-                              <div class="icon_box">
-                              <AiFillEye />
-                              </div>
-                              <div class="icon_box">
-                              <AiFillHeart />
+                          <div class="box">
+                            <div class="img_box">
+                              <img src={curElm.image} alt=""></img>
+                              <div class="icon">
+                                <div class="icon_box">
+                                  <AiFillEye />
+                                </div>
+                                <div class="icon_box">
+                                  <AiFillHeart />
+                                </div>
                               </div>
                             </div>
+                            <div class="info">
+                              <h3>{curElm.Name}</h3>
+                              <p>${curElm.price}</p>
+                              <button className='btn'>Add To Cart</button>
+                            </div>
                           </div>
-                          <div class="info">
-                            <h3>{curElm.Name}</h3>
-                            <p>${curElm.price}</p>
-                            <button className='btn'>Add To Cart</button>
-                          </div>
-                        </div>
                         </>
-                        )    
+                      )
                     })
                   }
                 </div>
+                <button>Show More</button>
               </div>
             </div>
             <div class="right_box">
-                  <div class="container">
-                    <div class="testimonial">
-                      <div class="head">
-                        <h3>Our Testimonials</h3>
+              <div class="right_container">
+                <div class="testimonial">
+                  <div class="head">
+                    <h3>Our Testimonials</h3>
+                  </div>
+                  <div class="detail">
+                    <div class="img_box">
+                      <img src="images/About Image.jpg" alt="testimonial"></img>
+                    </div>
+                    <div class="info">
+                      <h3>Stedan</h3>
+                      <h4>Web Developer</h4>
+                      <p>Excellent service and quality products! I got new laptop and phone here, and they both work perfectly. Highly recommend for all your tech needs!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="newsletter">
+                  <div class="head">
+                    <h3>Newsletter</h3>
+                  </div>
+                  <div class="form">
+                    <p>join our mailing list</p>
+                    <input type="email" placeholder='E-mail' autoComplete='off'></input>
+                    <button>subscribe</button>
+                    <div class="icon_box">
+                      <div class="icon">
+                      <BiLogoFacebook />
                       </div>
-                      <div class="detail">
-                        <div class="img_box">
-                          <img src="" alt="testimonial"></img>
-                        </div>
+                      <div class="icon">
+                      <BiLogoTwitter />
+                      </div>
+                      <div class="icon">
+                      <BiLogoInstagram />
+                      </div>
+                      <div class="icon">
+                      <BiLogoYoutube />
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banners">
+          <div class="container">
+            <div class="left_box">
+              <div class="box">
+                <img src="images/banner1.jpg" alt="banner1"></img>
+              </div>
+              <div class="box">
+                <img src="images/banner2.jpg" alt="banner2"></img>
+              </div>
+            </div>
+            <div class="right_box">
+              <div class="top">
+                <img src="images/banner4.jpg" alt="banner3"></img>
+                <img src="images/banner3.jpg" alt="banner4"></img>
+              </div>
+              <div class="bottom">
+                <img src="images/banner5.jpg" alt="banner5"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product_type">
+          <div class="container">
+            <div class="header">
+              <h2>New Product</h2>
             </div>
           </div>
         </div>
