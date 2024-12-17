@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react'
 import './home.css'
 import { createRoutesFromElements, Link } from 'react-router-dom';
 import Homeproduct from './home.product'
-import { AiFillEye, AiFillHeart } from "react-icons/ai";
-import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube} from "react-icons/bi";
+import { AiFillEye, AiFillHeart, AiOutlineShoppingCart } from "react-icons/ai";
+import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
 
 const Home = () => {
   //product category
-  const [newProduct, setNewProduct] = useState('');
+  const [newProduct, setNewProduct] = useState([]);
+  const [featuredProduct, setFeaturedProduct] = useState([]);
+  const [topProduct, setTopProduct] = useState([]);
+
   //trending products
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct)
   //filter of trending product
@@ -23,17 +26,27 @@ const Home = () => {
   }
 
   //Product Type
-  useEffect(() =>
-  {
+  useEffect(() => {
     productcategory()
   })
-  const productcategory = () => 
-  {
-    newcategory = Homeproduct.filter((x) =>
-    {
+  const productcategory = () => {
+    //New Product
+    const newcategory = Homeproduct.filter((x) => {
       return x.type === 'new'
     })
     setNewProduct(newcategory)
+
+    //Featured product
+    const featuredcategory = Homeproduct.filter((x) => {
+      return x.type === 'featured'
+    })
+    setFeaturedProduct(featuredcategory)
+
+    //Top product
+    const topcategory = Homeproduct.filter((x) => {
+      return x.type === 'top'
+    })
+    setTopProduct(topcategory)
   }
   return (
     <>
@@ -118,16 +131,16 @@ const Home = () => {
                     <button>subscribe</button>
                     <div class="icon_box">
                       <div class="icon">
-                      <BiLogoFacebook />
+                        <BiLogoFacebook />
                       </div>
                       <div class="icon">
-                      <BiLogoTwitter />
+                        <BiLogoTwitter />
                       </div>
                       <div class="icon">
-                      <BiLogoInstagram />
+                        <BiLogoInstagram />
                       </div>
                       <div class="icon">
-                      <BiLogoYoutube />
+                        <BiLogoYoutube />
                       </div>
                     </div>
                   </div>
@@ -158,14 +171,95 @@ const Home = () => {
           </div>
         </div>
         <div class="product_type">
-          <div class="container">
-            <div class="header">
-              <h2>New Product</h2>
-            </div>
-          </div>
+                  <div class="container">
+                    <div class="box">
+                    <div class="header">
+                      <h2>New Product</h2>
+                    </div>
+                    {
+                      newProduct.map((curElm) =>
+                      {
+                        return(
+                          <>
+                          <div class="productbox">
+                            <div class="img-box">
+                              <img src={curElm.image} alt="newproduct"></img>
+                            </div>
+                            <div class="detail">
+                            <h3>{curElm.Name}</h3>
+                            <p>${curElm.price}</p>
+                            <div class="icon">
+                              <button><AiFillEye /></button>
+                              <button><AiFillHeart /></button>
+                              <button><AiOutlineShoppingCart /></button>
+                            </div>
+                            </div>
+                          </div>
+                          </>
+                        )
+                      })
+                    }
+                    </div>
+                    <div class="box">
+                    <div class="header">
+                      <h2>Featured Product</h2>
+                    </div>
+                    {
+                      featuredProduct.map((curElm) =>
+                      {
+                        return(
+                          <>
+                          <div class="productbox">
+                            <div class="img-box">
+                              <img src={curElm.image} alt="newproduct"></img>
+                            </div>
+                            <div class="detail">
+                            <h3>{curElm.Name}</h3>
+                            <p>${curElm.price}</p>
+                            <div class="icon">
+                              <button><AiFillEye /></button>
+                              <button><AiFillHeart /></button>
+                              <button><AiOutlineShoppingCart /></button>
+                            </div>
+                            </div>
+                          </div>
+                          </>
+                        )
+                      })
+                    }
+                    </div>
+                    <div class="box">
+                    <div class="header">
+                      <h2>Top Product</h2>
+                    </div>
+                    {
+                      topProduct.map((curElm) =>
+                      {
+                        return(
+                          <>
+                          <div class="productbox">
+                            <div class="img-box">
+                              <img src={curElm.image} alt="newproduct"></img>
+                            </div>
+                            <div class="detail">
+                            <h3>{curElm.Name}</h3>
+                            <p>${curElm.price}</p>
+                            <div class="icon">
+                              <button><AiFillEye /></button>
+                              <button><AiFillHeart /></button>
+                              <button><AiOutlineShoppingCart /></button>
+                            </div>
+                            </div>
+                          </div>
+                          </>
+                        )
+                      })
+                    }
+                    </div>
+                  </div>
         </div>
       </div>
-    </>
+      </>
   )
 }
 

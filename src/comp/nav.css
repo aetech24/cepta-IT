@@ -19,12 +19,12 @@
 .header .top_header .icon
 {
     margin-left: 20px;
-    color: #ababab;
+    color: #ffffff;
     font-size: 19px;
 }
 .header .top_header .info p{
     margin-left: 10px;
-    color: #8a8a8a;
+    color: #333333;
 }
 .header .mid_header
 {
@@ -59,9 +59,9 @@
     border-bottom-right-radius: 5px;
     border: none;
     outline: none;
-    border: 1px solid darkred;
+    border: 1px solid #007bff;
     width: 50px;
-    background: darkred;
+    background: #007bff;
     color: #fff;
     cursor: pointer;
     margin-right: 30px;
@@ -71,8 +71,8 @@
 }
 .header .mid_header .search_box button:hover
 {
-    background: darkgoldenrod;
-    color: #232323;
+    background: #0056cc;
+    color: red;
 }
 .header .mid_header .user
 {
@@ -108,7 +108,7 @@
 .header .last_header .user_profile .icon
 {
     padding: 10px 10px;
-    background: #fff;
+    background: #f0f2f5;
     border-radius: 10px;
 }
 .header .last_header .user_profile .info
@@ -147,20 +147,20 @@
 }
 .header .last_header .nav ul li .link:hover
 {
-    color: darkred;
+    color: red;
 }
 .header .last_header .offer
 {
     margin-right: 20px;
     padding: 10px 20px;
-    background:darkred;
+    background:red;
     border-radius: 10px;
 }
 .header .last_header .offer p
 {
     margin-top: 5px;
     text-transform: uppercase;
-    color: darkgoldenrod;
+    color: white;
     font-weight: 600;
     font-size: 16px;
 }
