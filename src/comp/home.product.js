@@ -5,7 +5,7 @@ const Homeproduct =
         Name: "AirPods Pro",
         price: '26',
         image: 'images/AirPods.jpg',
-        cat: '',
+        cat: 'headphone',
         type: 'featured'
     },
     {
@@ -13,7 +13,7 @@ const Homeproduct =
         Name: "iPhone X",
         price: '200',
         image: 'images/iPhone X.jpg',
-        cat: '',
+        cat: 'phone',
         type: 'featured'
     },
     {
@@ -21,7 +21,7 @@ const Homeproduct =
         Name: "Dell Laptop",
         price: '480',
         image: 'images/Dell.jpg',
-        cat: '',
+        cat: 'laptop',
         type: 'new'
     },
     {
@@ -29,7 +29,7 @@ const Homeproduct =
         Name: "Hp Laptop",
         price: '510',
         image: 'images/Hp.jpg',
-        cat: '',
+        cat: 'laptop',
         type: 'top'
     },
     {
@@ -37,7 +37,7 @@ const Homeproduct =
         Name: "JBL Bluetooth Speaker",
         price: '55',
         image: 'images/Speaker.jpg',
-        cat: '',
+        cat: 'speaker',
         type: 'featured'
     },
     {
@@ -45,7 +45,7 @@ const Homeproduct =
         Name: "Apple Smartwatch",
         price: '95',
         image: 'images/Smartwatch.jpg',
-        cat: '',
+        cat: 'watch',
         type: 'new'
     },
     {
@@ -53,7 +53,7 @@ const Homeproduct =
         Name: "Mac Desktop",
         price: '2100',
         image: 'images/Mac Desktop.jpg',
-        cat: '',
+        cat: 'desktop',
         type: 'top'
     },
     {
@@ -61,7 +61,7 @@ const Homeproduct =
         Name: "MacBook Air",
         price: '1100',
         image: 'images/MacBook.JPG',
-        cat: '',
+        cat: 'laptop',
         type: 'top'
     },
     {
@@ -69,7 +69,7 @@ const Homeproduct =
         Name: "Dell Laptop",
         price: '480',
         image: 'images/Dell.jpg',
-        cat: '',
+        cat: 'laptop',
         type: 'featured'
     },
     {
@@ -77,7 +77,7 @@ const Homeproduct =
         Name: "JBL Bluetooth Speaker",
         price: '55',
         image: 'images/Speaker.jpg',
-        cat: '',
+        cat: 'speaker',
         type: 'top'
     },
     {
@@ -85,7 +85,7 @@ const Homeproduct =
         Name: "Hp Laptop",
         price: '510',
         image: 'images/Hp.jpg',
-        cat: '',
+        cat: 'laptop',
         type: 'new'
     },
     {
@@ -93,7 +93,7 @@ const Homeproduct =
         Name: "AirPods Pro",
         price: '26',
         image: 'images/AirPods.jpg',
-        cat: '',
+        cat: 'headphone',
         type: 'featured'
     },
 
