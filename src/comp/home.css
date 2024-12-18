@@ -37,7 +37,7 @@
     text-transform: uppercase;
     color: #232323;
     letter-spacing: 1px;
-    font-size: 42px;
+    font-size: 41px;
     margin-top: 10px;
 }
 .home .top_banner .content p
@@ -86,7 +86,7 @@
 }
 .home .trending .container .left_box .header .heading h2
 {
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
     color: #232323;
     margin-top: 5px;
@@ -99,7 +99,7 @@
 }
 .home .trending .container .left_box .header .cate h3
 {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: capitalize;
     margin-right: 10px;
     color: #232323;
@@ -189,7 +189,7 @@
 .home .trending .container .left_box .products .container .box .info h3
 {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     color: #232323;
     font-weight: 300;
     letter-spacing: 1px;
@@ -198,7 +198,7 @@
 {
     color: red;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
 }
 .home .trending .container .left_box .products .container .box .info .btn
@@ -246,7 +246,7 @@
 {
     text-align: center;
     color: #232323;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
     margin-top: 10px;
     letter-spacing: 1px;
@@ -270,13 +270,13 @@
 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     color: #232323;
 }
 .home .trending .container .right_box .right_container .testimonial .detail .info h4
 {
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 10px;
     color: red;
     font-weight: 300;
@@ -288,7 +288,7 @@
     text-align: center;
     font-weight: 600;
     color: #232323;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 .home .trending .container .right_box .right_container .newsletter
@@ -308,7 +308,7 @@
     text-align: center;
     color: #232323;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
 }
 .home .trending .container .right_box .right_container .newsletter .form
@@ -445,7 +445,7 @@
 .home .product_type .container .box .header h2
 {
     color: #232323;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -469,7 +469,7 @@
 }
 .home .product_type .container .box .productbox .detail h3
 {
-    font-size: 14px;
+    font-size: 13px;
     color: #8a8a8a;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -480,7 +480,7 @@
     color: red;
     letter-spacing: 1px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
 }
 .home .product_type .container .box .productbox .detail .icon
 {
