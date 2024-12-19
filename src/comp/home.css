@@ -505,3 +505,46 @@
     background: #f6f6f6;
     color: #232323;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .home .top_banner {
+        height: auto;
+        padding: 20px;
+    }
+    .home .top_banner .content {
+        padding: 10px;
+    }
+    .home .trending .container {
+        flex-direction: column;
+    }
+    .home .trending .container .left_box,
+    .home .trending .container .right_box {
+        width: 100%;
+    }
+    .home .banners .container {
+        flex-direction: column;
+    }
+    .home .banners .container .left_box,
+    .home .banners .container .right_box {
+        width: 100%;
+    }
+    .home .product_type .container {
+        flex-direction: column;
+    }
+    .home .product_type .container .box {
+        width: 100%;
+    }
+}

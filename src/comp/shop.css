@@ -214,3 +214,27 @@
     color: #007bff;
     background: #232323;
 }
+
+
+
+
+
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .shop .container {
+        flex-direction: column;
+    }
+    .shop .container .left_box,
+    .shop .container .right_box {
+        width: 100%;
+    }
+    .shop .container .right_box .product_box .product_container {
+        justify-content: center;
+    }
+    .shop .container .right_box .product_box .product_container .box {
+        width: 100%;
+        margin-left: 0;
+    }
+}

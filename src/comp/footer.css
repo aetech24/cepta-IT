@@ -111,3 +111,24 @@
 {
     color: red;
 }
+
+
+
+
+
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+    }
+    .footer .container .left-box,
+    .footer .container .right-box {
+        width: 100%;
+        padding: 10px;
+    }
+    .footer .container .right-box .header img {
+        margin-left: 0;
+    }
+}
