@@ -1,7 +1,7 @@
 import React from 'react'
 import './shop.css'
 import { AiFillHeart, AiFillEye} from "react-icons/ai";
-const Shop = ({shop, Filter, allcatefilter}) => {
+const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
   return (
     <>
     <div class="shop">
@@ -21,7 +21,7 @@ const Shop = ({shop, Filter, allcatefilter}) => {
                             <li onClick={() => Filter ("watch")}># watch</li>
                             <li onClick={() => Filter ("speaker")}># speaker</li>
                             <li onClick={() => Filter ("headphone")}># headphone</li>
-                            <li onClick={() => Filter ("desktop")}># desktop</li>
+                            <li onClick={() => Filter ("desktop")}> # desktop</li>
                         </ul>
                     </div>
                 </div>
@@ -55,8 +55,8 @@ const Shop = ({shop, Filter, allcatefilter}) => {
                                         </div>
                                         <div class="detail">
                                             <h3>{curElm.Name}</h3>
-                                            <p>{curElm.price}</p>
-                                            <button>Add To Cart</button>
+                                            <p>Price: ${curElm.price}</p>
+                                            <button onClick={() => addtocart(curElm)}>Add To Cart</button>
                                         </div>
                                     </div>
                                     </>

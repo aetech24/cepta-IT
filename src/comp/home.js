@@ -5,7 +5,7 @@ import Homeproduct from './home.product'
 import { AiFillEye, AiFillHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
 
-const Home = () => {
+const Home = ({addtocart}) => {
   //product category
   const [newProduct, setNewProduct] = useState([]);
   const [featuredProduct, setFeaturedProduct] = useState([]);
@@ -93,7 +93,7 @@ const Home = () => {
                             <div class="info">
                               <h3>{curElm.Name}</h3>
                               <p>${curElm.price}</p>
-                              <button className='btn'>Add To Cart</button>
+                              <button className='btn' onClick={() => addtocart (curElm)}>Add To Cart</button>
                             </div>
                           </div>
                         </>
@@ -191,7 +191,7 @@ const Home = () => {
                             <div class="icon">
                               <button><AiFillEye /></button>
                               <button><AiFillHeart /></button>
-                              <button><AiOutlineShoppingCart /></button>
+                              <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                             </div>
                             </div>
                           </div>
@@ -219,7 +219,7 @@ const Home = () => {
                             <div class="icon">
                               <button><AiFillEye /></button>
                               <button><AiFillHeart /></button>
-                              <button><AiOutlineShoppingCart /></button>
+                              <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                             </div>
                             </div>
                           </div>
@@ -247,7 +247,7 @@ const Home = () => {
                             <div class="icon">
                               <button><AiFillEye /></button>
                               <button><AiFillHeart /></button>
-                              <button><AiOutlineShoppingCart /></button>
+                              <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                             </div>
                             </div>
                           </div>
