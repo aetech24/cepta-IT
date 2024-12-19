@@ -11,7 +11,7 @@ const Shop = ({shop, Filter, allcatefilter}) => {
             <div class="left_box">
                 <div class="category">
                     <div class="header">
-                        <h2>All Categories</h2>
+                        <h3>All Categories</h3>
                     </div>
                     <div class="box">
                         <ul>
@@ -26,15 +26,15 @@ const Shop = ({shop, Filter, allcatefilter}) => {
                     </div>
                 </div>
                 <div class="banner">
-                    <div class="image_box">
-                        <img src="images/banner3.jpg" alt="shop_side_banner" />
+                    <div class="img_box">
+                        <img src="images/banner3.jpg" alt="shop_side_banner"></img>
                     </div>
                 </div>
             </div>
             <div class="right_box">
                 <div class="banner">
-                    <div class="image_box">
-                        <img src="images/banner4.jpg" alt="shop_top_banner" />
+                    <div class="img_box">
+                        <img src="images/banner4.jpg" alt="shop_top_banner"></img>
                     </div>
                 </div>
                 <div class="product_box">
