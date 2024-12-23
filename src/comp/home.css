@@ -12,11 +12,12 @@
 .home .top_banner
 {
     max-width: 100%;
-    height: 385px;
+    height: 390px;
     background: url('http://localhost:3000/images/banner-watch.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px 60px;
+    top: -15%;
 }
 .home .top_banner .content
 {
@@ -75,18 +76,19 @@
 {
     padding: 10px 20px;
     width: 75%;
+    overflow-y: scroll;
 }
 .home .trending .container .left_box .header
 {
     display: flex;
     max-width: 100%;
     padding: 10px 10px;
-    background: #f6f7f8;
+    background:rgb(161, 161, 161);
     justify-content: space-between;
 }
 .home .trending .container .left_box .header .heading h2
 {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #232323;
     margin-top: 5px;
@@ -99,7 +101,7 @@
 }
 .home .trending .container .left_box .header .cate h3
 {
-    font-size: 13px;
+    font-size: 14px;
     text-transform: capitalize;
     margin-right: 10px;
     color: #232323;
@@ -132,17 +134,19 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid rgba(182, 182, 182, 0.37);
+    text-align: center;
 }
 .home .trending .container .left_box .products .container .box
 {
     width: 195px;
     height: 295px;
-    padding: 10px 10px;
-    border: 4px solid #e6e6e9;
-    margin-top: 20px;
-    margin-left: 20px;
+    padding: 10px 20px;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 5px;
+    gap: 15px;
 }
 .home .trending .container .left_box .products .container .box .img_box
 {
@@ -234,13 +238,14 @@
 .home .trending .container .right_box .right_container .testimonial
 {
     width: 100%;
-    border: 4px solid #e1e3e4;
+    border: 1px solid rgb(182, 182, 182);
+    text-align: center;
 }
 .home .trending .container .right_box .right_container .testimonial .head
 {
     padding: 10px 10px;
     width: 100%;
-    background: #e1e3e4;
+    background: rgb(182, 182, 182);
 }
 .home .trending .container .right_box .right_container .testimonial .head h3
 {
@@ -258,9 +263,8 @@
 .home .trending .container .right_box .right_container .testimonial .detail .img_box img
 {
     margin-top: 40px;
-    margin-left: 30px;
     height: 100px;
-    
+    padding-bottom: 7px;     
 }
 .home .trending .container .right_box .right_container .testimonial .detail
 {
@@ -421,25 +425,28 @@
 {
     padding: 20px 30px;
     width: 100%;
+    /* overflow-y: scroll; */
 }
 .home .product_type .container
 {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    /* overflow-y: scroll; */
+    background: #23232318;
 }
 .home .product_type .container .box
 {
  width: 300px;
  height: 490px;
- border: 3px solid #f6f7f8;  
- overflow: hidden; 
+ border: 0.5px solid #23232325;  
+ overflow: scroll; 
 }
 .home .product_type .container .box .header
 {
     width: 100%;
     height: 50px;
-    background: #f6f6f6;
+    background: #d4d4d4;
     padding: 10px 10px;
 }
 .home .product_type .container .box .header h2
@@ -454,7 +461,7 @@
     width: 100%;
     height: 120px;
     padding: 10px 10px;
-    border: 1px sold #f6f7f8;
+    border: 0.65px solid #23232341;
     display: flex;
 }
 .home .product_type .container .box .productbox .img-box img
@@ -494,7 +501,7 @@
     border: none;
     padding: 10px 10px;
     border: 2px solid #f6f6f6;
-    margin-left: 10px;
+    margin-left: 6.5px;
     border-radius: 50%;
     color: #8a8a8a;
     cursor: pointer;

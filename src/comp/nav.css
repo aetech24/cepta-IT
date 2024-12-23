@@ -13,8 +13,11 @@
 {
     max-width: 100%;
     display: flex;
-    padding: 10px 10px;
-    background: #f6f7f9;
+    padding: 3px;
+    background: red;
+    justify-content: center;
+    align-items: center;
+    
 }
 .header .top_header .icon
 {
@@ -22,14 +25,19 @@
     color: #ffffff;
     font-size: 19px;
 }
+.header .top_header .info
+{
+    font-size: 13px;
+    font-weight: 200;
+}
 .header .top_header .info p{
     margin-left: 10px;
-    color: #333333;
+    color: #fff;
 }
 .header .mid_header
 {
     display: flex;
-    padding: 20px 40px;
+    padding: 5px 20px;
     max-width: 100%;
     justify-content: space-between;
 }
@@ -48,7 +56,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     width: 250px;
-    border: none;
+    border: 0.65px solid #23232360;
     transition: 0.5s;
     background: #f6f7f9;
 }
@@ -95,7 +103,7 @@
 .header .last_header
 {
     width: 100%;
-    padding: 10px;
+    padding: 0 0.5px 0 10px;
     display: flex;
     background: #232323;
     justify-content: space-between;
@@ -104,6 +112,7 @@
 {
     display: flex;
     margin-top: 10px;
+    align-items: center;
 }
 .header .last_header .user_profile .icon
 {
@@ -113,21 +122,24 @@
 }
 .header .last_header .user_profile .info
 {
-    margin-left: 10px;
+    margin-left: -10px;
 }
 .header .last_header .user_profile .info h2
 {
     color: #fff;
     font-size: 18px;
+    margin-left: 14px;
 }
 .header .last_header .user_profile .info p
 {
     color: #ababab;
     font-size: 14px;
+    margin-left: 14px;
 }
 .header .last_header .nav
 {
-    margin-top: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .header .last_header .nav ul
 {
@@ -151,10 +163,12 @@
 }
 .header .last_header .offer
 {
-    margin-right: 20px;
-    padding: 10px 20px;
-    background:red;
-    border-radius: 10px;
+    /* margin-right: 20px; */
+    padding: 20px;
+    background: red;
+    /* border-radius: 10px; */
+    height: 100%;
+    align-items: center;
 }
 .header .last_header .offer p
 {
@@ -163,6 +177,7 @@
     color: white;
     font-weight: 600;
     font-size: 16px;
+    text-align: center;
 }
 
 
@@ -185,15 +200,25 @@
         margin-top: 10px;
     }
     .header .mid_header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
+    .header .mid_header .logo img
+    {
+    height: 30px;
+    width: 130px;
+    cursor: pointer;
+    object-fit: cover;
+    margin-right: auto
+    }
     .header .mid_header .search_box {
-        width: 100%;
+        width: 12px;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: 10px;
     }
     .header .last_header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .header .last_header .nav ul {
@@ -202,5 +227,48 @@
     }
     .header .last_header .offer {
         margin-top: 10px;
+    }
+    .header .last_header .user_profile
+    {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 6px;
+    align-items: center;
+    }
+.header .last_header .user_profile .icon
+    {
+    padding: 10px 10px;
+    background: #f0f2f5;
+    border-radius: 10px;
+    }
+    .header .last_header .user_profile .info h2
+    {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 14px;
+    }
+.header .last_header .user_profile .info p
+    {
+    color: #ababab;
+    font-size: 10px;
+    margin-left: 14px;
+    }
+    .header .mid_header .user
+    {
+        margin-left: auto;
+    }
+    .header .mid_header .user .icon
+    {
+    margin-right: 10px;
+    }
+.header .mid_header .user .btn button
+    {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    /* padding: 0;*/
+    cursor: pointer;        
     }
 }

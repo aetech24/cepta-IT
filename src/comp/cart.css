@@ -53,14 +53,16 @@
 {
     display: flex;
     width: 100%;
-    border-bottom: 2px solid #f6f6f6;
+    border-bottom: 0.65px solid #23232318;
     height: 250px;
     margin-top: 10px;
+    background: #2323233f;
 }
 .cart .container .box .img_box img
 {
     width: 270px;
     height: 100%;
+    border: 0.65px solid #23232318;
 }
 .cart .container .box .detail
 {
@@ -167,4 +169,27 @@
     font-size: 15px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .shop .container {
+        flex-direction: column;
+    }
+    .shop .container .left_box,
+    .shop .container .right_box {
+        width: 100%;
+    }
+    .shop .container .right_box .product_box .product_container {
+        justify-content: center;
+    }
+    .shop .container .right_box .product_box .product_container .box {
+        width: 100%;
+        margin-left: 0;
+    }
 }
